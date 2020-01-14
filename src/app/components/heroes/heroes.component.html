@@ -4,6 +4,6 @@
 
 <div class="card-columns">
 
-    <app-hero-tarjeta *ngFor=" let heroe of heroes; let i = index;" [heroe]="heroe" [index]="i"></app-hero-tarjeta>
+    <app-hero-tarjeta (hereoSeleccionado)="verHeroe( $event )" *ngFor=" let heroe of heroes; let i = index;" [heroe]="heroe" [index]="i"></app-hero-tarjeta>
 
 </div>

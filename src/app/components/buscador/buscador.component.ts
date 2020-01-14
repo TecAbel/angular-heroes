@@ -22,7 +22,7 @@ export class BuscadorComponent implements OnInit {
       // console.log(param.termino); lo que se ve en la url
       this.heroes = this.heroesServicio.buscarHeroes(param.termino);
       this.termino = param.termino;
-      // console.log(this.heroes);
+      console.log(this.heroes);
     });
   }
 
